@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Belanosima', sans-serif;
+    /* background-color: wheat; */
+}
+
+.container{
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+.navbar{
+    width: 85%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#profile{
+    width: 150px;
+    margin-bottom: 10px;
+}
+#name{
+    margin-top: 170px;
+    margin-left: -1290px;
+    width: 90px;
+    height: 70px;
+    /* border: 2px solid; */
+    border-radius: 50%;
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+}
+.navbar:hover #name {
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(244,240,240));
+
+
+}
+.list{
+    display: inline;
+    list-style: none;
+    margin: 0px 20px;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+.link:hover{
+    color: red;
+}
+.title{
+    margin: 13% 0px 0px 8%;
+}
+.title-h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: chartreuse;
+    font-size: 50px;
+    font-weight: bold;
+}
+.download{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 30px 0px;
+}
+.images{
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 800px;
+    right: 30px;
+    margin-bottom: 1500px;
+    margin-right: 300px;
+}
+.imageGroup{
+    position: absolute;
+    height: 70%;
+    bottom: 130px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s , left 2s;
+}
+.images:hover #Fire{
+    bottom: 70px;
+}
+.images:hover #Phoneix{
+    left: 40%;
+}
+#about{
+    margin: 13% 8% 0px 8%;
+    margin-top: 300px;
+}
+.about-head{
+    text-align: center;
+}
+.about-head h2{
+    font-size: 35px;
+}
+.about-head span{
+    font-size: 20px;
+    color: darkslategrey;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.about-img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 2rem;
+}
+.informations{
+    margin: 2rem 0 0 0;
+}
+.info-box{
+    display: flexbox;
+    align-items: center;
+    margin: 0 0 2rem 0;
+
+}
+.info-box span {
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-image>img{
+    width: 90%;
+    padding-left: 5rem;
+    
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container>h1,span{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    width: 90%;
+    background-color: cornflowerblue;
+}
+.css-bar{
+    width: 85%;
+    background-color: cornflowerblue;
+}
+.js-bar{
+    width: 88%;
+    background-color: cornflowerblue;
+}
+.react-bar{
+    width: 87%;
+    background-color: cornflowerblue;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid; */
+    border-radius: 50%;
+    display: flex; 
+     justify-content: center;
+    align-items: center;
+    margin: 0px 10px; 
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+.icon:hover {
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(244,240,240));
+}
+.icon:hover i{
+    color: aliceblue;
+    animation: shake 0.75s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 3rem 0px;
+}
+.up-Arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right, yellow,orange,rgb(244,240,240));
+    margin: 0px 20px 30px 0px;
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid; */
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.up-Arrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: aqua;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
